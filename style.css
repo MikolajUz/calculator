@@ -2,11 +2,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap:5px;
+    margin: 20px;
 }
 
 
 calculator{
-    background-color: grey;
+    background-color: rgb(171 199 125);
     width: 290px;
     height: 420px;
     border-radius: 15px;
@@ -14,7 +18,8 @@ calculator{
     flex-direction: column;
     padding: 25px;
     align-items: center;
-    
+    border-style: solid;
+    border-color: black;
     gap: 30px;
     
 }
@@ -24,16 +29,37 @@ display{
     height: 100px;
     border-radius: 15px;
     display: flex;  
+    justify-content: flex-end;
+    align-items: center;
     padding: 5px;
+    font-size: 30px;
+    border-style: solid;
+    border-color: black;
 }
 button{
-    background-color: rgb(207, 105, 105);
-   
+    background-color: rgb(129 194 201);
+    cursor:grab;
     border-radius: 15px;
     width: 68px;
     height: 60px;
     
 }
+.active {
+    border-style: inset;
+  }
+
+button:hover{
+    background-color: rgb(110, 162, 168);
+}
+.disabled {
+    border-style: inset;
+    cursor: not-allowed;
+    background-color: rgb(168, 230, 236);
+  }
+  
+
+    
+
 row{
     display: flex;
     flex-wrap: wrap;
