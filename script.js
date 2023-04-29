@@ -260,7 +260,6 @@ var operator='';
 var string='';
 
 function buttonListener(){
-    
     if(this.id!=="Delete" && this.id!=="Backspace"){
         string=string+this.id;
         checkString(string);
@@ -272,7 +271,7 @@ function buttonListener(){
             }
             else{
                 document.getElementById('.').addEventListener('click',buttonListener); 
-                document.getElementById('.').classList.remove("disabled");
+                document.getElementById('.').classList.remove("disabled"):
                 string=string.toString().slice(0,-1) ;                 
                 display.textContent=display.textContent.slice(0,-1);
                 checkString(string);
