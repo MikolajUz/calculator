@@ -272,6 +272,7 @@ function buttonListener(){
             }
             else{
                 document.getElementById('.').addEventListener('click',buttonListener); 
+                document.getElementById('.').classList.remove("disabled");
                 string=string.toString().slice(0,-1) ;                 
                 display.textContent=display.textContent.slice(0,-1);
                 checkString(string);
